@@ -1,0 +1,5 @@
+N = int(input())
+M = int(input())
+Area = N * M
+domino = Area / 2
+print(domino)
