@@ -1,1 +1,1 @@
-# A2SV-Community-Path
+# Competitive Programming
