@@ -4,7 +4,8 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         while k != 0:
-            nums.insert(0,nums.pop())
+            a = nums.pop()
+            nums.insert(0,a)
             k -= 1
 
         
