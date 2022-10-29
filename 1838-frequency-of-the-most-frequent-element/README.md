@@ -7,26 +7,26 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,2,4], k = 5
+<pre style="position: relative;"><strong>Input:</strong> nums = [1,2,4], k = 5
 <strong>Output:</strong> 3<strong>
 Explanation:</strong> Increment the first element three times and the second element two times to make nums = [4,4,4].
-4 has a frequency of 3.</pre>
+4 has a frequency of 3.<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,4,8,13], k = 5
+<pre style="position: relative;"><strong>Input:</strong> nums = [1,4,8,13], k = 5
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> There are multiple optimal solutions:
 - Increment the first element three times to make nums = [4,4,8,13]. 4 has a frequency of 2.
 - Increment the second element four times to make nums = [1,8,8,13]. 8 has a frequency of 2.
 - Increment the third element five times to make nums = [1,4,13,13]. 13 has a frequency of 2.
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> nums = [3,9,6], k = 2
+<pre style="position: relative;"><strong>Input:</strong> nums = [3,9,6], k = 2
 <strong>Output:</strong> 1
-</pre>
+<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
