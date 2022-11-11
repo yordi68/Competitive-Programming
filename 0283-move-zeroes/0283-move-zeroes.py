@@ -3,16 +3,8 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-       # [2,1]
-    #[1,0,0,3,12]
-        #l   r
-       # [1,0,1]
-          # l 
-              #r
-         #l r
-            
-        l=0
+        l = 0
         for r in range(len(nums)):
             if nums[r]:
-                nums[l],nums[r]= nums[r],nums[l]
-                l+=1
+                nums[l],nums[r] = nums[r] , nums[l]
+                l += 1
