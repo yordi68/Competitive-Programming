@@ -12,3 +12,4 @@ class Solution:
             map[s[r]] = r
             r += 1
         return max(longest,r - l )
+    
