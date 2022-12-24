@@ -16,10 +16,6 @@ class Solution:
                 if length < minimum_distance:
                     minimum_distance = length
                     minimum_distance_index = i
-#                 elif length == minimum_distance:
-#                     if num1 < minimum_distance_x:
-#                         minimum_distance_index = i
-#                         minimum_distance_x = num1
-                        
+
         return (minimum_distance_index)
     
