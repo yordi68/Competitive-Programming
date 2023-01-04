@@ -1,12 +1,13 @@
 class Solution:
-    def closetTarget(self, words: List[str], target: str, startIndex: int) -> int:
+    def closetTarget(self, words: List[str], target: str, s: int) -> int:
 
-        n = len(words)
-
-        for left in range(n):
-            if words[(startIndex+left)%n ] == target: break
-        else: return -1    
-
-        for right in range(n):
-            if words[(startIndex-right)%n] == target: break
-        return  min(left, right)
+        if(target not in words):return -1
+        else:
+            c=1e9
+            for i in range(0,len(words)):
+                if(words[i]==target):
+                    c=min(c,abs(i-s))
+                    if(i>=s):c=min(c,s+len(words)-i)
+                    else:
+                        c=min(c,len(words)+i-s)
+            return c
