@@ -1,0 +1,28 @@
+n = int(input())
+for i in range(n):
+    s1,s2 = list(input().split())
+    _dict = {
+        "S":0,
+        "M": 1,
+        "L": 2
+    }
+ 
+    if _dict[s1[-1]] > _dict[s2[-1]]:
+        print(">")
+    elif _dict[s1[-1]] < _dict[s2[-1]]:
+        print("<")
+    else:
+        if _dict[s1[-1]] == "M":
+            print("=")
+        elif len(s1) > len(s2):
+            if s1[-1] == "S":
+                print("<")
+            else:
+                print(">")
+        elif len(s1) < len(s2):
+            if s1[-1] == "S":
+                    print(">")
+            else:
+                    print("<")
+        else:
+            print("=")
