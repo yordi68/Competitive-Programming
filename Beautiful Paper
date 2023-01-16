@@ -1,0 +1,12 @@
+n = int(input())
+ 
+for i in range(n):
+    a = list(map(int,input().split()))
+    b = list(map(int,input().split()))
+    if max(b) == max(a):
+        if min(a) + min(b) == max(a):
+            print("Yes")
+        else:
+            print("No")
+    else:
+        print("No")
