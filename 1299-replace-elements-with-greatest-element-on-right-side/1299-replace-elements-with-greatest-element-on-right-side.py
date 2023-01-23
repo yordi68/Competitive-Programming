@@ -1,18 +1,19 @@
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
         n = len(arr)
-        _max = max(arr)
-        answer = []
+        _max = -1
         
-        for i in range(n):
-            if i == n - 1:
-                answer.append(-1)
-                return answer
-            if arr[i] == _max:
-                temp = arr[n - 1:i:-1]
-                _max = max(temp)
+        for i in range(n - 1, - 1 ,-1):
+            temp = arr[i]
+            arr[i] = _max
+            if temp > _max:
+                _max = temp
+        
+        return arr
                 
+            
+        
+
                 
-            answer.append(_max)
             
     
