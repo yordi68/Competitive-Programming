@@ -15,5 +15,8 @@ class Solution:
         """
 
         
-        node.val = node.next.val
-        node.next = node.next.next
+        node.val, node.next = node.next.val, node.next.next
+        
+        
+        
+    
