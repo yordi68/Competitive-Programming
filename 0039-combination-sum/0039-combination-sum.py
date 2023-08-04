@@ -1,24 +1,24 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         
-        self.ans = []
+        ans = []
+        self.findCombinations(0, candidates, target, ans, [])
+        
+        return ans        
         
         
-        def findCombinations(idx, candidates, target, ds):
-            if idx == len(candidates):
-                if target == 0:
-                    self.ans.append(ds)
-                return
-            
-            
-            if candidates[idx] <= target:
-                ds.append(candidates[idx])
-                findCombinations(idx, candidates, target - candidates[idx], ds[:])
-                ds.pop()
-                
-            findCombinations(idx + 1, candidates, target, ds[:])
-            
-            
-        findCombinations(0, candidates, target, [])
         
-        return self.ans
+    def findCombinations(self, idx, arr, target, ans, carry):
+        if idx == len(arr):
+            if target == 0:
+                ans.append(carry)   
+            return
+        
+        if arr[idx] <= target:
+            carry.append(arr[idx])
+            self.findCombinations(idx, arr, target - arr[idx], ans, carry[:])
+            carry.pop()
+            
+        self.findCombinations(idx + 1, arr, target, ans, carry[:])
+        
+
