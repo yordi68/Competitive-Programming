@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// space complexity for the dfs traversal S(C) -> 0(n) + 0(n) + 0(n) == 0(n)
+// 0(n) -> for the visited array
+// 0(n) -> for the number of nodes
+// 0(n) -> for the recursion stack space
 class Solution {
     private:
         void dfs(int node, vector<int> adj[], int vis[], vector<int> &ls){
