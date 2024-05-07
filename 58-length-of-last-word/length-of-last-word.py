@@ -1,8 +1,13 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        s_array = s.split(" ")
+        i = len(s) - 1
 
-        for i in range(len(s_array) - 1, -1, -1):
-            if s_array[i] != "":
-                return len(s_array[i])
+        while i >= 0 and s[i] == ' ':
+            i -= 1
         
+        lastChrIndex = i
+
+        while i >= 0 and s[i] != ' ':
+            i -= 1
+        
+        return lastChrIndex - i
